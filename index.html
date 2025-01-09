@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">
+      Your Fitness Journey
+    </h1>
+    <p id="description">
+      Help Us, Help You – Fill Out Our Quick Survey!
+    </p>
+    <form id="survey-form" method="post" action="url">
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Your Name" required /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Your Email" required /></label>
+        <label id="number-label" for="age">Enter Your Age: <input id="number" name="age" type="number" min="13" max="99" placeholder="Your Age" /></label>
+        <label for="dropdown">What's Your Fitness Goal?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Weight loss</option>
+            <option value="2">Muscle gain</option>
+            <option value="3">Improved endurance</option>
+            <option value="4">General health & wellness</option>
+            <option value="5">Stress relief</option>
+            <option value="6">Sports-specific training</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="level-label">What’s Your Current Fitness Level?
+          <label for="fitness-lvl1">
+            <input id="fitness-lvl1" type="radio" name="fitness-lvl" value="beginner" class="inline" checked/> Beginner (Just getting started)
+          </label>
+          <label for="fitness-lvl2">
+            <input id="fitness-lvl2" type="radio" name="fitness-lvl" value="intermediate" class="inline"/> Intermediate (Some experience)
+          </label>
+          <label for="fitness-lvl3">
+            <input id="fitness-lvl3" type="radio" name="fitness-lvl" value="advanced" class="inline"/> Advanced (Regular training for years)
+          </label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Which Fitness Activities Do You Enjoy?
+          <label for="run">
+            <input id="run" type="checkbox" name="run" value="run" class="inline"/> Running/Jogging  
+          </label>
+          <label for="strength">
+            <input id="strength" type="checkbox" name="strength" value="strength" class="inline"/> Strength Training 
+          </label>
+          <label for="yoga">
+            <input id="yoga" type="checkbox" name="yoga" value="yoga" class="inline"/> Yoga/Pilates
+          </label>
+          <label for="cycle">
+            <input id="cycle" type="checkbox" name="cycle" value="cycle" class="inline"/> Cycling
+          </label>
+          <label for="swim">
+            <input id="swim" type="checkbox" name="swim" value="swim" class="inline"/> Swimming
+          </label>
+          <label for="team">
+            <input id="team" type="checkbox" name="team" value="team" class="inline"/> Team Sports
+          </label>
+          <label for="hike">
+            <input id="hike" type="checkbox" name="hike" value="hike" class="inline"/> Hiking
+          </label>
+          <label for="home">
+            <input id="home" type="checkbox" name="home" value="home" class="inline"/> Home Workout
+          </label>
+          <label for="other">
+            <input id="other" type="checkbox" name="other" value="other" class="inline"/> Other
+          </label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestion">What would you like to see on our website to support your fitness goals?
+            <textarea id="suggestion" name="bio" rows="5" cols="30" placeholder="Your Suggestions..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
